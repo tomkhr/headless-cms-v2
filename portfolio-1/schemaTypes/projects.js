@@ -1,5 +1,5 @@
 export default {
-    name: 'project',        // Unique name for the schema type
+    name: 'projects',        // Unique name for the schema type
     title: 'Projects',       // Title shown in Sanity Studio
     type: 'document',    // This defines it as a document type
     fields: [
@@ -9,9 +9,12 @@ export default {
         type: 'string'
       },
       {
-        name: 'thumbnail',
-        title: 'Thumbnail Image',
-        type: 'image'
+        name: 'image',
+        title: 'Image',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
       },
       {
         name: 'description',

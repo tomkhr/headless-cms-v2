@@ -4,16 +4,18 @@ import styles from "./globals.css";
 import Typography from '@mui/material/Typography';
 import SiteHeader from "@/components/SiteHeader";
 import ProjectThumbnail from "@/components/ProjectThumbnail";
+import DataFetcher from "@/components/DataFetcher";
 
 export default function Home() {
   return (
     <div>
-      <Typography variant="h1" gutterBottom>
+      {/* <Typography variant="h1" gutterBottom>
         Testing Material UI
-      </Typography>
+      </Typography> */}
       
       <SiteHeader />
-      <ProjectThumbnail />
+      {/* <ProjectThumbnail /> */}
+        <DataFetcher />
     </div>
   );
 }

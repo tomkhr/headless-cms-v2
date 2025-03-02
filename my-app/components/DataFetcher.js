@@ -11,7 +11,7 @@ export default function DataFetcher() {
     const fetchProjects = async () => {
       try {
         const result = await client.fetch(`*[_type == "projects"]`);
-        console.log('Fetched Projects:', result);
+        // console.log('Fetched Projects:', result);
         setProjects(result);
       } catch (error) {
         console.error('Failed to fetch projects', error);
@@ -28,11 +28,22 @@ export default function DataFetcher() {
   }
 
   return (
-    <div style={{ padding: '10px', backgroundColor: 'blue' }}>
+    <div style={{ padding: '.5rem', paddingTop: '70px', maxWidth: '1200px', margin: 'auto'}}>
       {projects.map((project) => (
-        <div key={project._id}>
-          <h2>{project.title}</h2>
-          <p>{project.description}</p>
+        <div key={project._id} style={{
+            backgroundColor: '#171717', 
+            margin: '1rem',
+            padding: '2rem',
+            minHeight: '300px',
+            borderRadius: '1rem',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'end',
+            border: '1px solid #444',
+            }}>
+          <h1 style={{color: ''}}>{project.title}</h1>
+          <p>{project.date}</p>
+          <p style={{marginTop: '1rem', color: '#999'}}>{project.description}</p>
         </div>
       ))}
     </div>
@@ -42,5 +53,6 @@ export default function DataFetcher() {
 
 const query = `*[_type == "projects"]{
     title,
-    description
+    description,
+    date
   }`;

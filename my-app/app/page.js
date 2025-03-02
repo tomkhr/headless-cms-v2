@@ -15,7 +15,7 @@ export default function Home() {
       
       <SiteHeader />
       {/* <ProjectThumbnail /> */}
-        <DataFetcher />
+        <DataFetcher styles />
     </div>
   );
 }

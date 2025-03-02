@@ -5,12 +5,13 @@ const SiteHeader = () => {
     headerDiv: {
       width: '100%',
       minHeight: '70px',
-      backgroundColor: '#141414',
+      backgroundColor: '#171717',
       display: 'flex',
       justifyContent: 'center', // Centered content
       alignItems: 'center',
       padding: '0 20px',
-      color: '#fff'
+      color: '#fff',
+      position: 'fixed',
     }
   };
 

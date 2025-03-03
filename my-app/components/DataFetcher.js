@@ -50,7 +50,7 @@ export default function DataFetcher() {
             />
           )}
 
-          <h1 style={{color: ''}}>{project.title}</h1>
+          <h1>{project.title}</h1>
           <p>{project.date}</p>
           <p style={{marginTop: '1.5rem', color: '#999'}}>{project.description}</p>
 

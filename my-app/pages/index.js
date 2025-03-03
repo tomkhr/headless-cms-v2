@@ -9,7 +9,6 @@ import DataFetcher from "@/components/DataFetcher";
 export default function Home() {
   return (
     <div>
-              <h1>Hello World!</h1>
       {/* <Typography variant="h1" gutterBottom>
         Testing Material UI
       </Typography> */}

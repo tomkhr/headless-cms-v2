@@ -28,9 +28,9 @@ const SiteHeader = () => {
     <div className='header'>
       <div>
         <h1 style={{color: '#dfff0e'}}>Tom Khrustalev</h1>
-        <h2 style={{fontSize: '1rem',}}>Online Portfolio Boilerplate</h2>
+        <h2>Online Portfolio Boilerplate</h2>
       </div>
-      <div style={{display: 'flex', gap: '2rem'}}>
+      <div className='nav_links'>
           <a href='https://artkhr.webflow.io' target='blank'>Old Portfolio</a>
 
           <a href='http://linkedin.com/in/artkhr/' target='blank'>LinkedIn</a>

@@ -42,6 +42,10 @@ h1 {
   font-size: 2rem;
 }
 
+h2 {
+  font-size: 1rem;
+}
+
 .header {
   width: 100%;
   min-height: 100px;
@@ -69,8 +73,34 @@ h1 {
     border: 1px solid #444;
   }
 
+
+.nav_links {
+  display: flex;
+  gap: 1.5rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: .8rem;
+  }
+  
+  a {
+    text-align: right;
+  }
+
+  .nav_links {
+      flex-direction: column;
+      gap: .5rem;
+      font-size: .8rem;
   }
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,7 +21,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: monospace;
+  font-family: "Roboto Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,11 +37,37 @@ a {
   text-decoration: none;
 }
 
-.projectThumbnail {
-  padding: 2rem;
-  background-color: #171717;
-  border: 1px solid #333333;
+h1 {
+  font-family: "Funnel Display", sans-serif;
+  font-size: 2rem;
 }
+
+.header {
+  width: 100%;
+  min-height: 100px;
+  background-color: #171717;
+  border-bottom: 1px solid #333333;
+  box-shadow: 10px 0px 25px #0a0a0a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: #fff;
+  position: fixed;
+}
+
+
+.project {
+    background-color: #171717;
+    margin: 1rem;
+    padding: 2rem;
+    min-height: 300px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid #444;
+  }
 
 @media (prefers-color-scheme: dark) {
   html {
